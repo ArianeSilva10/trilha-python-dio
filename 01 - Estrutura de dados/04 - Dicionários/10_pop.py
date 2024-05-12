@@ -5,3 +5,7 @@ print(resultado)
 
 resultado = contatos.pop("guilherme@gmail.com", {})  # {}
 print(resultado)
+
+
+resultado = contatos.pop("guilherme@gmail.com", "nao encontrou")  # nao encontrou
+print(resultado)
