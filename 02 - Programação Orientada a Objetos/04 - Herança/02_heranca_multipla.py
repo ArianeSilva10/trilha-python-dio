@@ -26,16 +26,13 @@ class Ave(Animal):
         return 'ave 42'
 
 
-
 class Gato(Mamifero):
     pass
-
 
 
 class  Falar_mixim:
     def falar(self):
         return "oi estou falando"
-
 
 
 class Ornitorrinco(Mamifero, Ave, Falar_mixim):
