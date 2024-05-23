@@ -1,8 +1,8 @@
 class Estudante:
     escola = "DIO"
 
-    def __init__(self, nome, matricula):
-        self.nome = nome
+    def __init__(self, nome, matricula) -> None:
+        self.nome = nome 
         self.matricula = matricula
 
     def __str__(self) -> str:
@@ -16,8 +16,11 @@ def mostrar_valores(*objs):
 
 aluno_1 = Estudante("Guilherme", 1)
 aluno_2 = Estudante("Giovanna", 2)
+
 mostrar_valores(aluno_1, aluno_2)
 
 Estudante.escola = "Python"
+aluno_1.escola = "curso"
+
 aluno_3 = Estudante("Chappie", 3)
 mostrar_valores(aluno_1, aluno_2, aluno_3)
