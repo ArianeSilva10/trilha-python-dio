@@ -1,19 +1,34 @@
+# primeira forma (mais recomendável)
 def meu_decorador(funcao):
     def envelope(*args, **kwargs):
         print("faz algo antes de executar")
-        resultado = funcao(*args, **kwargs)
+        funcao(*args, **kwargs)
         print("faz algo depois de executar")
-        return resultado
 
     return envelope
 
 
-@meu_decorador
-def ola_mundo(nome, outro_argumento):
+# segunda forma de fazer
+def meu_decorador2(funcao):
+    def envelope(nome):
+        print("faz algo antes de executar")
+        funcao(nome)
+        print("faz algo depois de executar")
+
+    return envelope
+
+
+
+@meu_decorador # açúcar sintático
+def ola_mundo(nome):
     print(f"Olá mundo {nome}!")
-    return nome.upper()
 
 
-resultado = ola_mundo("João", 1000)
-print(resultado)
-print(ola_mundo)
+@meu_decorador2
+def ola(nome):
+    print(f"Ola {nome}")
+
+
+
+ola_mundo("joao")
+ola("Joao")

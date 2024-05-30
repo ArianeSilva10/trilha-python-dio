@@ -14,4 +14,4 @@ def ola_mundo(nome, outro_argumento):
     print(f"Olá mundo {nome}!")
 
 
-print(ola_mundo.__name__)
+print(ola_mundo.__name__) # nome da funcao ola_mundo sem o nome do decorador
