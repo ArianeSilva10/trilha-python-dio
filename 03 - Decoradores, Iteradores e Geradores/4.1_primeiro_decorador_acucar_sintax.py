@@ -7,7 +7,7 @@ def meu_decorador(funcao):
     return envelope
 
 
-@meu_decorador
+@meu_decorador # açúcar sintático
 def ola_mundo():
     print("Olá mundo!")
 

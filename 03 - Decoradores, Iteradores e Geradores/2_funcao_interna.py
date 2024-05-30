@@ -1,14 +1,14 @@
-def principal():
-    print("executando a funcao principal")
+def main():
+    print("Executando a função main")
 
     def funcao_interna():
-        print("executando a funcao interna")
+        print("executando a funçao interna")
 
-    def funcao_2():
-        print("executando a funcao 2")
+    def funcao2():
+        print("executando a função 2")
 
     funcao_interna()
-    funcao_2()
+    funcao2()
 
 
-principal()
+main()

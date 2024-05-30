@@ -1,8 +1,8 @@
 def meu_decorador(funcao):
     def envelope():
-        print("faz algo antes de executar")
+        print("Faz algo aantes de executar")
         funcao()
-        print("faz algo depois de executar")
+        print("Faz algo depois de executar")
 
     return envelope
 
@@ -10,6 +10,7 @@ def meu_decorador(funcao):
 def ola_mundo():
     print("Olá mundo!")
 
-
 ola_mundo = meu_decorador(ola_mundo)
 ola_mundo()
+
+# Colocar um comportamento nesta função
