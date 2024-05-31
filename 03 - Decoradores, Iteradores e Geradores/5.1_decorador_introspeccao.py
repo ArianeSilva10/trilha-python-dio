@@ -4,7 +4,7 @@ import functools
 def meu_decorador(funcao):
     @functools.wraps(funcao)
     def envelope(*args, **kwargs):
-        funcao(*args, **kwargs)
+        funcao(*args, **kwargs) # estes argumentos extras faz com que funcione incluindo funções com e sem argumento
 
     return envelope
 
