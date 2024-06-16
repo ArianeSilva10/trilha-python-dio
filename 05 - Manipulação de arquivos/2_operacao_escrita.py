@@ -1,6 +1,6 @@
-arquivo = open(
-    "/home/guilherme/Projetos/dio/codigo-fonte/trilha-python-dio/05 - Manipulação de arquivos/teste.txt", "w"
-)
+arquivo = open(r"C:\Users\arian\OneDrive\Área de Trabalho\Estudo_Programação\bootcamp\trilha-python-dio\05 - Manipulação de arquivos/teste.txt", "w")
+
 arquivo.write("Escrevendo dados em um novo arquivo.")
-arquivo.writelines(["\n", "escrevendo", "\n", "um", "\n", "novo", "\n", "texto"])
+arquivo.writelines("Python") # escreveu uma letra por vez
+
 arquivo.close()

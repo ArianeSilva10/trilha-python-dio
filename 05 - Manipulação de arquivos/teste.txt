@@ -1,5 +1,1 @@
-Escrevendo dados em um novo arquivo.
-escrevendo
-um
-novo
-texto
+Escrevendo dados em um novo arquivo.Python
