@@ -1,27 +1,20 @@
-# Lembre-se de alterar o caminho do arquivo, para o caminho completo da sua máquina!
+arquivo = open(r"C:\Users\arian\OneDrive\Área de Trabalho\Estudo_Programação\bootcamp\trilha-python-dio\05 - Manipulação de arquivos\lorem.txt", "r")
 
-arquivo = open(
-    "/home/guilherme/Projetos/dio/codigo-fonte/trilha-python-dio/05 - Manipulação de arquivos/lorem.txt", "r"
-)
-print(arquivo.read())
-arquivo.close()
+# print(arquivo.read())
 
-arquivo = open(
-    "/home/guilherme/Projetos/dio/codigo-fonte/trilha-python-dio/05 - Manipulação de arquivos/lorem.txt", "r"
-)
-print(arquivo.readline())
-arquivo.close()
+# print(arquivo.readline()) # What is Lorem Ipsum?
+# readline imprime uma linha por vez, se eu colocar outro readline, a segunda linnha também será imprimida
 
-arquivo = open(
-    "/home/guilherme/Projetos/dio/codigo-fonte/trilha-python-dio/05 - Manipulação de arquivos/lorem.txt", "r"
-)
-print(arquivo.readlines())
-arquivo.close()
+# EXEMPLO
+# for linha in arquivo.readline(): # vai imprimir caractere por caractere
+#    print(linha)
 
-arquivo = open(
-    "/home/guilherme/Projetos/dio/codigo-fonte/trilha-python-dio/05 - Manipulação de arquivos/lorem.txt", "r"
-)
-# tip
+
+# for linha in arquivo.readlines(): # vai imprimir linha por linha (iterar pelo texto)
+#    print(linha)
+
+
+# DICA PARA TEXTOS GRANDES
 while len(linha := arquivo.readline()):
     print(linha)
 
